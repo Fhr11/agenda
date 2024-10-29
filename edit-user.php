@@ -36,14 +36,17 @@ include_once('header.php');
                     <label for="" class="col-sm-3 col-form-label"></label>
                     <div class="col-sm-8 d-flex justify-content-end">
                     </div>
-                    <a type="button" class="btn btn-danger btn-icon-split" href="users.php">
-                        <span class="icon text-white-50">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text">Kembali</span>
-                    </a>
-                    <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
-                </div>
+                    <fieldset style="margin-left : 80%">
+            <div class="d-flex justify-content-between">
+                <a href="absen.php" class="btn btn-danger btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text">Kembali</span>
+                </a>
+                <button type="submit" name="simpan" class="btn btn-primary" style="margin-left: 15px;">Simpan</button>
+            </div>
+            </fieldset>
             </form>
         </div>
     </div>

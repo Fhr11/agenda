@@ -78,7 +78,7 @@
                                     <td>5</td>
                               
                                     <td>
-                                        <a class="btn btn-success" href="edit-tamu.php?id=<?= $tamu['id_tamu'] ?>">Ubah</a>
+                                        <a class="btn btn-success" href="edit-absen.php">Ubah</a>
                                         <a onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')" class="btn btn-danger" href="hapus-tamu.php?id=<?= $tamu['id_tamu'] ?>">Hapus</a>
                                     </td>
                                 </tr>
