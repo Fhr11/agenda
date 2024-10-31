@@ -7,6 +7,7 @@ include_once('header.php');
     <!-- DataTales Tambah -->
      <div class="content-wrapper">
     <div class="card shadow mb-4">
+        <h2 style="margin-left : 20px">User</h2>
         <div class="card-header py-3">
             <button type="button" class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#TambahModal">
                 <span class="icon text-white-50">

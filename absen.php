@@ -1,9 +1,15 @@
 <?php
 include_once('header.php');
 ?>
+<style>
+    .card-shadow-mb-4 {
+        padding-top: 20px;
+    }
+</style>
     <!-- DataTales Tambah -->
      <div class="content-wrapper">
     <div class="card shadow mb-4">
+        <h2 style="margin-left : 20px">Input Absen</h2>
         <div class="card-header py-3">
             <button type="button" class="btn btn-primary btn-icon-split"
              data-toggle="modal" data-target="#tambahModal">

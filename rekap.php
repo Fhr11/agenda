@@ -1,18 +1,30 @@
 <?php include_once 'header.php'; ?>
-<div class="content-wrapper">
+<style>
+    .content-wrapper {
+        margin-left: 20px; /* Jarak dari sidebar */ margin-right: 20px; /* Jarak dari sidebar */
+    }
 
+    .card {
+        margin: 30px; /* Jarak luar antara card dengan elemen lain */
+    }
+
+    .card-header, .card-body {
+        padding: 15px; /* Jarak dalam antara header, body, dan konten */
+    }
+</style>
+
+<div class="content-wrapper">
     <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Rekap Absen</h1>
-          </div>
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h2>Rekap Absen</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <div class="row mx-auto d-flex justify-content-center">
-        <!-- Periode Awal -->
         <div class="col-xl-5 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -22,9 +34,7 @@
                                 <form method="post" action="">
                                     <div class="form-row align-items-center">
                                         <div class="col-auto">
-                                            <div class="font-weight-bold text-primary text-uppercase mb-1">
-                                                Periode
-                                            </div>
+                                            <div class="font-weight-bold text-primary text-uppercase mb-1">Periode</div>
                                         </div>
                                         <div class="col-auto">
                                             <input type="date" class="form-control mb-2" id="p_awal" name="p_awal" required>
@@ -69,26 +79,22 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                              
-                                    <td>
-                                        <a class="btn btn-success" href="edit-absen.php">Ubah</a>
-                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')" class="btn btn-danger" href="hapus-tamu.php?id=<?= $tamu['id_tamu'] ?>">Hapus</a>
-                                    </td>
-                                </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>
+                                <a class="btn btn-success" href="edit-absen.php">Ubah</a>
+                                <a onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')" class="btn btn-danger" href="hapus-tamu.php?id=<?= $tamu['id_tamu'] ?>">Hapus</a>
+                            </td>
+                        </tr>
                     </tbody>
-
                 </table>
             </div>
         </div>
     </div>
+</div>
 
-<?php
-include_once('footer.php');
-?>
+<?php include_once('footer.php'); ?>

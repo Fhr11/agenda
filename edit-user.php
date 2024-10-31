@@ -6,13 +6,13 @@ include_once('header.php');
 <div class="content-wrapper">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">Ubah Data user</h1>
+    <h1 class="h3 mb-4 text-gray-800" style="margin-left: 20px;">Ubah Data user</h1>
 
 
     <!-- Konten Edit Data user -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6>Data user</h6>
+            <h1>Data user</h1>
         </div>
         <div class="card-body">
             <form method="post" action="">
